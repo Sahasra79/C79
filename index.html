@@ -1,0 +1,69 @@
+<html>
+
+<head>
+<title> Array </title>
+
+
+
+
+
+</head>
+<body>
+<center>
+<h1> 
+    The List of Students in My Class
+</h1>
+<div>
+<span> 1 </span>
+<input type="text" placeholder = "studentName" id ="student1">
+<br>
+<span> 2 </span>
+<input type="text" placeholder = "studentName" id ="student2">
+<br>
+<span> 3 </span>
+<input type="text" placeholder = "studentName" id ="student3">
+<br>
+<span> 4 </span>
+<input type="text" placeholder = "studentName" id ="student4">
+<br>
+<div id = "answer"> </div>
+<button onclick="submit()"> submit </button>
+<br>
+<button onclick="sorting()"> sort </button>
+
+</div>
+</center>
+<script>
+    studentArray = [];
+    function submit(){
+        var s1=document.getElementById ("student1").value;
+        var s2=document.getElementById ("student2").value;
+        var s3=document.getElementById ("student3").value;
+        var s4=document.getElementById ("student4").value;
+        studentArray.push(s1);
+        studentArray.push(s2);
+        studentArray.push(s3);
+        studentArray.push(s4);
+        console.log (studentArray);
+        document.getElementById ("answer").innerHTML = studentArray;
+    }
+     function sorting(){
+        studentArray.sort();
+        document.getElementById ("answer").innerHTML = studentArray;
+    }
+     
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+</html>
